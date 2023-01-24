@@ -1,8 +1,9 @@
-# Bookshelf
+# Bookshelf Server
 
 ## Wireframe:
 
-![Wireframe image](image)
+![Wireframe image](/images/Bookshelf-Wireframe.png)
+![ERD](/images/Bookshelf-ERD.png)
 
 ## User Story:
 
