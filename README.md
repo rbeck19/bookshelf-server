@@ -3,7 +3,7 @@
 ## Wireframe:
 
 ![Wireframe image](/images/Bookshelf-Wireframe.png)
-![ERD](/images/Bookshelf-ERD.png)
+![ERD](/images/ERD.png)
 
 ## User Story:
 
