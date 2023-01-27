@@ -52,7 +52,7 @@ router.delete("/notes/:noteId", (req, res, next) => {
         .then(handle404)
         .then(book => {
             book.notes.id(req.params.noteId).remove()
-            book.save()
+            return book.save()
         })
         .then(() => res.sendStatus(204))
         .catch(next)
