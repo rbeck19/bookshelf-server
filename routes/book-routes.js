@@ -8,7 +8,10 @@ const router = express.Router()
 //INDEX
 //GET /books
 router.get("/books", requireToken, (req, res, next) => {
-    Book.find()
+        //get the user ID
+    const user = req.user._id
+        //display only the items that have "owner" = to user ID
+    Book.find({"owner": user})
         .then((books) => {
             return books.map((book) => book)
         })
