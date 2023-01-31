@@ -1,23 +1,40 @@
-# Bookshelf Server
+# Bookshelf 
 
-## Wireframe:
+Bookshelf is where you can have your very own book tracker. Keep track of what books you have read and add some notes to your book as a reminder of why liked the book or why you didn't. 
 
-![Wireframe image](/images/Bookshelf-Wireframe.png)
+Your list of books and notes are only accesable to you.
+
+## Technologies Used:
+- HTML
+- CSS
+- bootstrap
+- JavaScript
+- MongoDB
+- Mongoose
+- Express
+- cors
+- bycrpt
+- jsonwebtoken
+- passport
+
+## Entity Relationship Diagram (ERD):
+
 ![ERD](/images/ERD.png)
 
-## User Story:
+|   NAME    |           PATH          |   HTTP VERB   |                 PURPOSE                 |
+| --------- | ----------------------- | ------------- | --------------------------------------- |
+|   Index   |  /books                 |   GET         | Display all books                       |
+|   Show    |  /books/:id             |   GET         | Show one specific book                  |
+|   Create  |  /books                 |   POST        | Creat a new book                        |
+|   Update  |  /books/:id             |   PATCH       | Update a specific book                  |
+|   Delete  |  /books/:id             |   DELETE      | Delete a specific book                  |
+|   Create  |  /notes                 |   POST        | Create a note linked to a specific book |
+|   Update  |  /notes/:noteId         |   PATCH       | Update a note linked to a specific book |
+|   Delete  |  /notes/:noteId/:bookId |   DELETE      | Delete a note linked to a specific book |
+|   Create  |  /sign-up               |   POST        | Create a new user                       |
+|   Create  |  /sign-in               |   POST        | Create a user token for a exisitng user |
 
-### MVP:
-- As a user, I want to be able to sign up
-- As a user, I want to be able to sign in
-- As a user, I want to add a Book
-- As a user, I want to see my added books
-- As a user, I want to update my book
-- As a user, I want to delete my book
-- As a user, I want to add notes to a book
-- As a user I want to update notes
-- As a user I want to delete notes
-- As a user, I want to only see what i have added into the database
+## User Story:
 
 ### Version 2:
 - As a user, I want to have a list of books I am currently reading
