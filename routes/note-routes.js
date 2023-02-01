@@ -46,7 +46,6 @@ router.patch("/notes/:noteId", (req, res, next) => {
 
 //DELETE   /notes/:noteId
 router.delete("/notes/:noteId/:bookId", (req, res, next) => {
-    console.log("inside delete route")
     const bookId = req.params.bookId
     
     Book.findById(bookId)
